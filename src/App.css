@@ -1,0 +1,47 @@
+.app {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.side {
+    height: 100%;
+    display: flex;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main {
+    margin-left: 250px;
+    width:100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.main::after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: -20px -20px 0 0 #fff;
+}
+
+.main::before{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: -20px 20px 0 0 #fff;
+}
+

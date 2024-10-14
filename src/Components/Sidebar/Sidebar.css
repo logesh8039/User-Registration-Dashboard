@@ -1,0 +1,61 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sidebar .logo {
+    font-size: 28px;
+    cursor: pointer;
+    color: #E34801;
+}
+
+.logo h2{
+    text-align: center;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.sidebar ul li{
+    width: 100%;
+    display: block;
+}
+
+.sidebar ul li a{
+    width: 100%;
+    display: block;
+    padding: 0.4rem 0.8rem;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 2px solid #1C2027;
+    color: #000;
+}
+
+ul li a.active{
+    background-color: #1C2027;
+    color: #fff;
+    border: 2px solid #1E79E9;
+    transition: 0.3s all;
+}
+
+.login{
+    background-color: red;
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #31B1EF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    cursor: pointer;
+}
